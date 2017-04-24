@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="recipeApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Recipe Generator</title>
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
+    <script type="text/javascript" src="scripts/client.min.js"></script>
+  </head>
+  <body>
+    <h1>Recipe Generator</h1>
+    <div ng-controller="OneController as ingredients">
+      <form name="ingredientsForm" ng-submit="ingredients.submit()">
+        <input type="text" placeholder="search" ng-model="ingredients.input.title">
+        <input type="submit" value="Submit">
+      </form>
+    </div> <!-- end ng-controller OneController -->
+  </body>
+</html>
