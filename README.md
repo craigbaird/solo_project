@@ -2,7 +2,7 @@
 
 #BASE MODE
 
-[ ] Setup file structure, source all frameworks, and install all dependencies, set up basic call to Spoonacular API. - 4hrs
+[X] Setup file structure, source all frameworks, and install all dependencies, set up basic call to Spoonacular API. - 4hrs
 
 [ ] Build Find By Ingredients feature and set up table in MongoDB to pre populate data console log with results from API. - 16hrs
 
