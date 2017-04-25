@@ -1,4 +1,4 @@
-var recipeApp = angular.module("recipeApp", []);
+var recipeApp = angular.module("recipeApp", ["ngMaterial"]);
 
 recipeApp.controller("OneController", ["RecipeService", function(RecipeService){
   var ingredients = this;
@@ -8,6 +8,15 @@ recipeApp.controller("OneController", ["RecipeService", function(RecipeService){
   }; // end ingredients.submit
   ingredients.infoFromApi = RecipeService.infoFromApi;
 }]); // end OneController
+
+
+recipeApp.controller("TwoController", ["$scope", "RecipeService", function($scope, RecipeService) {
+  $scope.clear = function(){
+    $scope.myModel = undefined;
+  };
+}]);
+
+
 
 recipeApp.factory("RecipeService", ["$http", function($http){
   var infoFromApi = {};
