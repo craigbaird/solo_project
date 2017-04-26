@@ -13,6 +13,15 @@ recipeApp.controller("OneController", ["RecipeService", function(RecipeService){
 recipeApp.controller("TwoController", ["$scope", "RecipeService", function($scope, RecipeService) {
   $scope.clear = function(){
     $scope.myModel = undefined;
+
+    // input post new ingredients when you post refresh dropdown ingredients
+
+    $http.post('/ingredients/addIngredient', favoriteObject).then(function(response){
+         $http.get('/ingredients').then(function(response){
+           console.log(response);
+           favorites.list = response.data;
+         });// ends get to favorites
+       });//ends post to addFavorite
   };
 }]);
 

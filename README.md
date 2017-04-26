@@ -4,6 +4,8 @@
 
 [X] Setup file structure, source all frameworks, and install all dependencies, set up basic call to Spoonacular API. - 4hrs - took 3 hrs
 
+[X] Source in Angular Material
+
 [ ] Build Find By Ingredients feature and set up table in MongoDB to pre populate data console log with results from API. - 16hrs
 
 [ ] Build Recipe Results feature to display info from the API. - 8hrs
